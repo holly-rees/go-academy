@@ -40,6 +40,7 @@ func DisplayDescendingSlice(slice []int) {
 	fmt.Println(slice)
 }
 
+// variadic input parameters ...string allows more than one (or none)
 func DisplaySliceInDirection(slice []int, direction ...string) {
 	if len(direction) > 0 && strings.ToLower(direction[0]) == "descending" {
 		DisplayDescendingSlice(slice)
