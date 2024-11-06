@@ -4,7 +4,7 @@
 // Count even numbers and odd numbers in increasing and decreasing sequential order.
 // Display the even and odd count sequences to screen.
 
-package assignments
+package assignment4
 
 import (
 	"fmt"
