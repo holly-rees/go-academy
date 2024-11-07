@@ -3,8 +3,19 @@
 
 package assignment6
 
-func Assignment6() {
+import (
+	"time"
 
+	b "github.com/bearbin/go-age"
+)
+
+func Assignment6() {
+	CalculateAge("13/09/1992")
 }
 
-// time.Parse to parse string into time.Time object
+func CalculateAge(dob string) int {
+	layout := "02/01/2006"
+	birthDate, _ := time.Parse(layout, dob)
+
+	return b.Age(birthDate)
+}

@@ -1,7 +1,7 @@
 package main
 
-import g "go-assignments/assignments/assignment5"
+import g "go-assignments/assignments/assignment6"
 
 func main() {
-	g.Assignment5()
+	g.Assignment6()
 }
