@@ -3,14 +3,18 @@
 package assignment9
 
 import (
+	"bufio"
 	"fmt"
+	"os"
 	"strings"
 )
 
 func Assignment9() {
-	var fullName string
+
+	reader := bufio.NewReader(os.Stdin)
 	fmt.Print("Enter full name (first middle last): ")
-	fmt.Scanln(&fullName)
+	fullName, _ := reader.ReadString('\n')
+
 	DisplayNames(fullName)
 
 }
